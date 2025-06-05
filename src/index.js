@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import connectDB from './db/index.js';
+import app from './app.js';
 
 dotenv.config(); // No need for path if file is named `.env`
 
@@ -14,7 +15,7 @@ connectDB()
   process.exit(1); // Exit the process with failure
 });
 
-
+export default app;
 
 
 
